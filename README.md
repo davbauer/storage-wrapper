@@ -12,7 +12,7 @@ An Arduino library for easily storing data on ESP8266´s EEPROM.
 	---
 - **Available Methods**
 	>
-	- int getStart()
+	- int getStart() &nbsp; &nbsp; &nbsp; &nbsp; asd
 	- int getEnd()
 	- String getCache()
 	>
