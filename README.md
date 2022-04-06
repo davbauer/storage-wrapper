@@ -3,8 +3,8 @@ An Arduino library for easily storing data on ESP8266´s EEPROM.
 *Mostly based on https://github.com/PaulStoffregen/EEPROM*
 
  - **Importing the Library**
-	 1. Download the library
-	 2. Launch Arduino IDE and click *`[Sketch]`* *->* *`[Include Library]`* -> *`[Add .ZIP Library...]`* to import the library
+	1. Download the library
+	2. Launch Arduino IDE and click *`[Sketch]`* *->* *`[Include Library]`* -> *`[Add .ZIP Library...]`* to import the library
 - **Opening the example .ino file**
 	1. In Arduino IDE click *`[File]`* *->* *`[Examples]`* -> *`[Storage]`* -> *`[basic]`* to open the example code
 - **Finishing up**
