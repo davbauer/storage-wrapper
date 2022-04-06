@@ -12,14 +12,14 @@ An Arduino library for easily storing data on ESP8266´s EEPROM.
 	---
 - **Available Methods**
 	>
-	- int    getStart()                                       returns start byte position
-	- int    getEnd()                                         returns end byte position
-	- String getCache()                                       returns what´s currently saved in cache
+	- int    getStart()⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀returns start byte position
+	- int    getEnd()⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀returns end byte position
+	- String getCache()⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀returns what´s currently saved in cache
 	>
-	- void   clear()                                          clears the Storage object (remove what´s saved)
-	- void    write(String/int/float/double text)             writes a string/int/float/double into Storage object
+	- void   clear()⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀clears the Storage object (remove what´s saved)
+	- void    write(String/int/float/double text)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀writes a string/int/float/double into Storage object
 	>
-	- String  readString()                                    retrive saved data as string
-	- String  read()                                          retrive saved data as string
-	- int     readInt()                                       retrive saved data as int
-	- double  readDouble()                                    retrive saved data as double
+	- String  readString()⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀retrive saved data as string
+	- String  read()⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀retrive saved data as string
+	- int     readInt()⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀retrive saved data as int
+	- double  readDouble()⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀retrive saved data as double
