@@ -53,5 +53,4 @@ An Arduino library for easily storing data on ESP8266´s EEPROM.
 	void loop() {
 	  delay(10000);
 	}
-	end
 	```
