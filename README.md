@@ -26,7 +26,28 @@ An Arduino library for easily storing data on ESP8266´s EEPROM.
 
 - **Example Code**
 	
-	``` Ruby
-	class MyClass
+	``` C++
+	#include <EEPROM.h> // https://github.com/PaulStoffregen/EEPROM
+	#include <Storage.h> // https://github.com/davbauer/Storage
+
+	Storage my_object(0, 20); // Define your Storage objects
+	Storage other_obj(20, 30)
+
+	void setup() {
+	  Serial.begin(115200);
+	  EEPROM.begin(512); // Set the amount of bytes of your EEPROM
+
+	  my_object.write("Data to save"); // Write data
+	  x = my_object.read(); // Read Data
+	  Serial.println(x); // Print Data
+
+	  other_obj.write(19.86);
+	  y = my_object.read();
+	  Serial.println(x);
+	}
+
+	void loop() {
+	  delay(10000);
+	}
 	end
 	```
