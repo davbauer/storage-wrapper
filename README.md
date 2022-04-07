@@ -31,19 +31,23 @@ An Arduino library for easily storing data on ESP8266´s EEPROM.
 	#include <Storage.h> // https://github.com/davbauer/Storage
 
 	Storage my_object(0, 20); // Define your Storage objects
-	Storage other_obj(20, 30)
+	Storage other_obj(20, 30);
 
 	void setup() {
 	  Serial.begin(115200);
+	  Serial.println();
 	  EEPROM.begin(512); // Set the amount of bytes of your EEPROM
 
 	  my_object.write("Data to save"); // Write data
-	  x = my_object.read(); // Read Data
-	  Serial.println(x); // Print Data
+	  String x = my_object.read(); // Read Data
+	  Serial.println(x); // Prints ("Data to save")
 
 	  other_obj.write(19.86);
-	  y = my_object.read();
-	  Serial.println(x);
+	  int y = other_obj.readInt();
+	  double z = other_obj.readDouble(); 
+
+	  Serial.println(y); // Prints (19)
+	  Serial.println(z); // Prints (19.86)
 	}
 
 	void loop() {
