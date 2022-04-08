@@ -60,6 +60,7 @@ String Storage::readString() {
     for (int i = _start; i < _end; i++) if (char(EEPROM.read(i)) != '\0') temp_read += char(EEPROM.read(i)); 
   } else {
     temp_read = _cache;
+    return temp_read;
   }
   if(!isAscii(temp_read[0])) {
       temp_read = "";
