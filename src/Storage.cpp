@@ -61,6 +61,10 @@ String Storage::readString() {
   } else {
     temp_read = _cache;
   }
+  if(!isAscii(temp_read[0])) {
+      temp_read = "";
+  }
+  _cache = temp_read;
   return temp_read; 
 }
 
