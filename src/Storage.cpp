@@ -25,7 +25,7 @@ String Storage::getCache() {
 
 void Storage::clear() {
   if (_cache != "") {
-    for (int i = _start; i < _end; i++) EEPROM.write(i, 0);
+    for (int i = _start; i < _end; i++) EEPROM.write(i, " ");
     EEPROM.commit();
     _cache = "";
   }
