@@ -26,14 +26,14 @@ An Arduino library for easily storing data on ESP8266´s EEPROM.
 
 - **Example Code**
 	
-	``` C++
+	```C++
 	#include <EEPROM.h> // https://github.com/PaulStoffregen/EEPROM
 	#include <Storage.h> // https://github.com/davbauer/Storage
 
 	Storage my_object(0, 20); // Define your Storage objects and from which
 	Storage other_obj(20, 30); // byte to start and end writing
 
-	void setup() {
+	void setup(void) {
 	  Serial.begin(115200);
 	  Serial.println();
 	  EEPROM.begin(512); // Set the amount of bytes of your EEPROM
@@ -50,8 +50,8 @@ An Arduino library for easily storing data on ESP8266´s EEPROM.
 	  Serial.println(z); // Prints (19.86)
 	}
 
-	void loop() {
-	  delay(10000);
+	void loop(void) {
+	  delay(1000);
 	}
 	```
 	Final Output (Serial Monitor):
