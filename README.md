@@ -1,5 +1,5 @@
-# ESP8266 Library: Storage
-An Arduino library for easily storing data on ESP8266´s EEPROM.
+# ESP8266 Wrapper Library: Storage
+An Arduino wrapper library for making it easier to store or retrieve data for beginners.
 *Mostly based on https://github.com/PaulStoffregen/EEPROM*
 
  - **Importing the Library**
@@ -10,19 +10,22 @@ An Arduino library for easily storing data on ESP8266´s EEPROM.
 - **Finishing up**
 	+ I. Make sure the library EEPROM is installed, if its not already installed you can download it [here](https://github.com/PaulStoffregen/EEPROM) and follow the steps from above to import it.
 	---
+	
+	
+	
 - **Available Methods**
-	>
-	- int    getStart()⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ *returns start byte position*
-	- int    getEnd()⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀*returns end byte position*
-	- String getCache()⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ *returns what´s currently saved in cache*
-	>
-	- void   clear()⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ *clears the Storage object (remove what´s saved)*
-	- void    write(String/int/float/double text)⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ *writes a string/int/float/double into Storage object*
-	>
-	- String  readString()⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ *retrieve saved data as string*
-	- String  read()⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ *retrieve saved data as string*
-	- int     readInt()⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ *retrieve saved data as int*
-	- double  readDouble()⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ *retrieve saved data as double*
+
+| Method-Name | Return-Type | What it does |
+| ----------- | ----------- | ----------- |
+| getStart()      			| int       | return start byte position |
+| getEnd()   				| int        | return end byte position |
+| getCache()   				| String        | return cached store value |
+| clear()   				| void        | clear data from store|
+| write(String/int/float/double)   	| void        | write data to store |
+| readString()   			| String        | read data as string |
+| read()   				| String        | read data as string |
+| readInt()				| int        | read data as int |
+| readDouble()   			| double        | read data as double |
 
 - **Example Code**
 	
