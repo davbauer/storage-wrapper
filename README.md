@@ -8,10 +8,9 @@ An Arduino wrapper library for making it easier to store or retrieve data for be
 - **Opening the example .ino file**
 	+ I. In Arduino IDE click *`[File]`* *->* *`[Examples]`* -> *`[Storage]`* -> *`[basic]`* to open the example code
 - **Finishing up**
-	+ I. Make sure the library EEPROM is installed, if its not already installed you can download it [here](https://github.com/PaulStoffregen/EEPROM) and follow the steps from above to import it.
-	---
+	+ I. Make sure the library EEPROM is installed, if its not already installed you can download it [here](https://github.com/PaulStoffregen/EEPROM) and follow the steps from above to import it
 	
-	
+---
 	
 - **Available Methods**
 
@@ -26,6 +25,8 @@ An Arduino wrapper library for making it easier to store or retrieve data for be
 | read()   				| String        | read data as string |
 | readInt()				| int        | read data as int |
 | readDouble()   			| double        | read data as double |
+
+---
 
 - **Example Code**
 	
