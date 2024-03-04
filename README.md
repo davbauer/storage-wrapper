@@ -1,5 +1,5 @@
 # ESP8266 Wrapper Library: Storage
-An Arduino wrapper library for making it easier to store or retrieve data for beginners.
+An minimal Arduino wrapper library for making it easier to store or retrieve data for beginners.
 *Mostly based on https://github.com/PaulStoffregen/EEPROM*
 
  - **Importing the Library**
